@@ -29,7 +29,7 @@ Listing, 401 and 404).
 After install modules and depencies using `npm install`and to run the application you can use  `npm start` command you can run json server and Angular development server easily.
 
 ## Rules
-
+- Login requests might not be validated when deployed properly because MockAPI doesn't verify credentials; it simply simulates API behavior, and it is mentioned in the requirements of the assignment to use MockAPI.
 - All users can view Homepage when they logged in. Homepage protected by `LoginGuard (Router-Guard)` that allow to only authorized users. If user have not token will be redirect to Login page.
 - Navigation provided by Navbar buttons by using `RouterLink`. User List button will be hidden if you are not Super Admin.
 - User List page protected by `AdminGuard (Router-Guard)` that allow to access only users has role Super Admin. If Customer try to go User List page will be redirect to 401 - Forbidden page.
