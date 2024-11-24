@@ -1,17 +1,14 @@
-- [User Authorization Project](#user-authorization-project)
+- [Angular project](#Angular-project)
   - [Running App](#running-app)
   - [Rules](#rules)
   - [Roles](#roles)
   - [About App](#about-app)
-  - [TO DO](#to-do)
-  - [Known Issues](#known-issues)
-  - [Screen Shots](#screen-shoots)
     - [Login - Register And Angular Form Validation](#login---register-and-angular-form-validation)
     - [Customer](#customer)
     - [Admin](#admin)
     - [Super Admin](#super-admin)
 
-# User Authorization Project
+# Angular project
 
 Welcome to my RBAC project! There are 3 types of roles (Super Admin, Admin,
 Customer) of roles. This app has 6 pages (Login, Register, Home, User
