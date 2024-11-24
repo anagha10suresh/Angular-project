@@ -1,0 +1,97 @@
+<mat-card class="home-card my-3">
+  <ng-container *ngIf="currentUser$ | async as currentUser">
+    <mat-card-header>
+      <div mat-card-avatar class="home-header-image">
+        
+      </div>
+      
+      <mat-card-title>{{ currentUser.fullName }}</mat-card-title>
+      <mat-card-subtitle>{{ userRoles[currentUser.role] }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <h2>User Authorization Project</h2>
+      <p>
+        Welcome to the User Management App, {{ currentUser.fullName }}! As our 
+        {{ userRoles[currentUser.role] }}, we’re excited to have you here! This 
+        dashboard is your all-in-one hub, tailored to provide a seamless experience 
+        whether you're managing operations, tracking progress, or exploring services. 
+        Customers can easily navigate their purchases and preferences, admins can 
+        oversee and optimize daily tasks, and superadmins have the tools to maintain 
+        and enhance the system. Everything you need is just a click away, designed with 
+        simplicity and efficiency in mind. Let’s achieve great things together!
+      </p>
+    </mat-card-content>
+  </ng-container>
+</mat-card>   
+<mat-card class="home-card my-3">
+  <ng-container *ngIf="currentUser$ | async as currentUser">
+    <!-- Existing content here -->
+
+    <mat-card-content>
+      <!-- Section: Features by Role -->
+      <h3>Features by Role</h3>
+
+      <!-- For Customers -->
+      <section>
+        <h4>For Customers</h4>
+        <ul>
+          <li>
+            <strong>Registration:</strong> Create an account to access personalized services and tools.
+          </li>
+          <li>
+            <strong>Login:</strong> Log in securely using valid credentials for seamless access.
+          </li>
+        </ul>
+      </section>
+
+      <!-- For Admins -->
+      <section>
+        <h4>For Admins</h4>
+        <ul>
+          <li>
+            <strong>Manage User Data:</strong> Create, Read, Update, and Delete user profiles effortlessly.
+          </li>
+          <li>
+            <strong>User Monitoring:</strong> View detailed user activities and manage user roles.
+          </li>
+          <li>
+            <strong>Add New Users:</strong> Quickly onboard new users to the system.
+          </li>
+        </ul>
+      </section>
+
+      <!-- For Superadmins -->
+      <section>
+        <h4>For Superadmins</h4>
+        <ul>
+          <li>
+            <strong>Role Management:</strong> Assign and update roles for users and admins.
+          </li>
+          <li>
+            <strong>Admin Management:</strong> Add or update admin accounts as required.
+          </li>
+          <li>
+            <strong>System Oversight:</strong> Monitor system-wide data for accuracy and efficiency.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Security and Accessibility -->
+      <section>
+        <h3>Security and Accessibility</h3>
+        <p>
+          Our system ensures role-based access to provide a secure and user-friendly experience for 
+          every user. Advanced authentication protocols protect user data and maintain system integrity.
+        </p>
+      </section>
+
+      <!-- Closing Message -->
+      <h3>Let’s Build Together!</h3>
+      <p>
+        Whether you're a customer, admin, or superadmin, your contributions help us create a thriving 
+        environment. Let’s work together to achieve excellence and innovation.
+      </p>
+    </mat-card-content>
+  </ng-container>
+</mat-card>
